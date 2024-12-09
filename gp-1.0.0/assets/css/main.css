@@ -1740,3 +1740,32 @@ section,
 .service-item:hover p {
   display: none;
 }
+/* WhatsApp Floating Button */
+#whatsapp-icon {
+  position: fixed; /* Fixed position on screen */
+  bottom: 20px; /* 20px from the bottom */
+  right: 20px; /* 20px from the right */
+  background-color: #25D366; /* WhatsApp Green */
+  color: white; /* Icon color */
+  padding: 10px; /* Padding to make the icon circular */
+  border-radius: 50%; /* Ensure the button is circular */
+  width: 50px; /* Set the width of the circle */
+  height: 50px; /* Set the height of the circle (same as width to keep it circular) */
+  display: flex; /* Flexbox to center the image */
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: all 0.3s ease-in-out;
+  z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+#whatsapp-icon img {
+  width: 30px; /* Set the size of the WhatsApp image */
+  height: 30px; /* Maintain the aspect ratio */
+  object-fit: contain; /* Ensure the image fits well inside the circle */
+}
+
+#whatsapp-icon:hover {
+  background-color: #128C7E; /* Darker WhatsApp Green on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
